@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cuestionario de Liderazgo - 2025-II</title>
+<!-- U.D. LIDERAZGO Y TRABAJO EN EQUIPO – SEMESTRE 2025-II -->
+<section class="cuestionario-lead">
   <style>
-    /* Aquí va tu CSS original */
     .cuestionario-lead * { box-sizing: border-box; }
     .cuestionario-lead {
       --bg:#f7f7fb;
@@ -21,7 +16,7 @@
       border-radius: 16px;
       border: 1px solid var(--border);
       max-width: 980px;
-      margin: 40px auto;
+      margin: 0 auto;
       box-shadow: 0 8px 24px rgba(16,24,40,.06);
     }
     .cuestionario-lead .header {
@@ -81,7 +76,28 @@
       border-radius: 12px;
       padding: 14px;
       margin-bottom: 14px;
+
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
     }
+    /* Alternar orden de imagen/texto */
+    .qcard.left-img .qimg {
+      order: 0;
+    }
+    .qcard.right-img .qimg {
+      order: 1;
+    }
+    .qcard .qimg img {
+      max-width: 120px;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+    .qcard .qtext {
+      flex: 1;
+    }
+
     .cuestionario-lead label {
       display: block;
       font-weight: 600;
@@ -136,11 +152,6 @@
       }
     }
   </style>
-</head>
-<body>
-
-<!-- U.D. LIDERAZGO Y TRABAJO EN EQUIPO – SEMESTRE 2025-II -->
-<section class="cuestionario-lead">
 
   <div class="header">
     <span class="badge">U.D. Liderazgo y Trabajo en Equipo – Semestre 2025-II</span>
@@ -154,49 +165,129 @@
   </div>
 
   <div class="tips">
-    <strong>Instrucciones:</strong> Responde cada pregunta con tus propias palabras, reflexionando sobre el contenido leído.
+    <strong></strong> </em>
   </div>
 
-  <!-- Preguntas -->
-  <div class="qcard">
-    <label for="q1"><span class="qnum">1</span> ¿Cómo se define el liderazgo según el documento y en qué se diferencia de un simple cargo o posición?</label>
-    <textarea id="q1" name="q1" placeholder="Respuesta aquí..."></textarea>
+  <!-- Pregunta 1 - Imagen izquierda -->
+  <div class="qcard left-img">
+    <div class="qimg">
+      <img src="https://via.placeholder.com/120x100?text=Imagen+1" alt="Imagen 1">
+    </div>
+    <div class="qtext">
+      <label for="q1"><span class="qnum">1</span> ¿Cómo se define el liderazgo según el documento y en qué se diferencia de un simple cargo o posición?</label>
+      <textarea id="q1" name="q1" placeholder="Según el documento, el liderazgo se define como una fuerza dinámica y transformadora que impulsa el cambio y el progreso a través de la visión, la inspiración y la acción. A diferencia de un simple cargo o posición, que se limita a otorgar autoridad formal, el liderazgo implica guiar, motivar y empoderar a otros para que alcancen su máximo potencial y trabajen juntos hacia un objetivo común. Es decir, mientras un cargo se centra en la jerarquía y la función asignada, el liderazgo trasciende la estructura formal y se manifiesta en la capacidad de generar influencia positiva en las personas y en los equipos."></textarea>
+    </div>
   </div>
 
-  <div class="qcard">
-    <label for="q2"><span class="qnum">2</span> ¿Por qué el liderazgo se considera una fuerza transformadora en las organizaciones y la sociedad?</label>
-    <textarea id="q2" name="q2" placeholder="Respuesta aquí..."></textarea>
+  <!-- Pregunta 2 - Imagen derecha -->
+  <div class="qcard right-img">
+    <div class="qimg">
+      <img src="https://via.placeholder.com/120x100?text=Imagen+2" alt="Imagen 2">
+    </div>
+    <div class="qtext">
+      <label for="q2"><span class="qnum">2</span> ¿Por qué el liderazgo se considera una fuerza transformadora en las organizaciones y la sociedad?</label>
+      <textarea id="q2" name="q2" placeholder="El liderazgo se considera una fuerza transformadora porque va más allá de la autoridad formal y se centra en la capacidad de inspirar, motivar y movilizar a las personas hacia un propósito común. A través de la visión, los valores compartidos y la responsabilidad colectiva, un líder logra que los individuos y equipos no solo alcancen objetivos, sino que también se transformen en el proceso, desarrollando nuevas habilidades y fortaleciendo su compromiso. En este sentido, el liderazgo impulsa cambios significativos tanto en las organizaciones como en la sociedad, convirtiéndose en un motor de progreso y desarrollo."></textarea>
+    </div>
   </div>
 
-  <div class="qcard">
-    <label for="q3"><span class="qnum">3</span> Explica qué significa que el liderazgo sea una influencia positiva más allá de la autoridad formal.</label>
-    <textarea id="q3" name="q3" placeholder="Respuesta aquí..."></textarea>
+  <!-- Pregunta 3 - Imagen izquierda -->
+  <div class="qcard left-img">
+    <div class="qimg">
+      <img src="https://via.placeholder.com/120x100?text=Imagen+3" alt="Imagen 3">
+    </div>
+    <div class="qtext">
+      <label for="q3"><span class="qnum">3</span> Explica qué significa que el liderazgo sea una influencia positiva más allá de la autoridad formal.</label>
+      <textarea id="q3" name="q3" placeholder="Que el liderazgo sea una influencia positiva más allá de la autoridad formal significa que no depende únicamente de ocupar un cargo o tener poder jerárquico, sino de la capacidad de un líder para convencer, inspirar y motivar voluntariamente a las personas. Esta influencia se basa en el ejemplo, la confianza y los valores, lo que permite generar compromiso y movilizar a los equipos hacia metas compartidas. En otras palabras, el verdadero liderazgo no se impone, sino que se gana, cultivando relaciones de respeto y confianza que trascienden la estructura organizacional."></textarea>
+    </div>
   </div>
 
-  <div class="qcard">
-    <label for="q4"><span class="qnum">4</span> ¿En qué ámbitos puede desarrollarse el liderazgo según el texto?</label>
-    <textarea id="q4" name="q4" placeholder="Respuesta aquí..."></textarea>
+  <!-- Pregunta 4 - Imagen derecha -->
+  <div class="qcard right-img">
+    <div class="qimg">
+      <img src="https://via.placeholder.com/120x100?text=Imagen+4" alt="Imagen 4">
+    </div>
+    <div class="qtext">
+      <label for="q4"><span class="qnum">4</span> ¿En qué ámbitos puede desarrollarse el liderazgo según el texto?</label>
+      <textarea id="q4" name="q4" placeholder="El liderazgo puede desarrollarse en diversos ámbitos como el profesional, social, familiar, deportivo y comunitario. En cada uno de estos espacios, la influencia del líder se manifiesta a través de la capacidad de inspirar, organizar y motivar a las personas hacia objetivos comunes, demostrando que el liderazgo no se limita a lo empresarial, sino que es una habilidad aplicable a todos los aspectos de la vida."></textarea>
+    </div>
   </div>
 
-  <div class="qcard">
-    <label for="q5"><span class="qnum">5</span> ¿Qué implica la idea de que “liderar es inspirar y transformar”?</label>
-    <textarea id="q5" name="q5" placeholder="Respuesta aquí..."></textarea>
+  <!-- Pregunta 5 - Imagen izquierda -->
+  <div class="qcard left-img">
+    <div class="qimg">
+      <img src="https://via.placeholder.com/120x100?text=Imagen+5" alt="Imagen 5">
+    </div>
+    <div class="qtext">
+      <label for="q5"><span class="qnum">5</span> ¿Qué implica la idea de que “liderar es inspirar y transformar”?</label>
+      <textarea id="q5" name="q5" placeholder="La idea de que “liderar es inspirar y transformar” implica que el verdadero liderazgo no consiste solo en dar órdenes, sino en encender una chispa en las personas, motivándolas a superar sus propios límites y a trabajar de manera colaborativa. Inspirar genera confianza, impulsa la innovación y el aprendizaje continuo, mientras que transformar significa convertir los desafíos en oportunidades de crecimiento colectivo, logrando que tanto las personas como las organizaciones evolucionen y prosperen frente a la adversidad."></textarea>
+    </div>
   </div>
 
-  <div class="qcard">
-    <label for="q6"><span class="qnum">6</span> ¿Cuáles son las principales diferencias entre un líder y un gestor?</label>
-    <textarea id="q6" name="q6" placeholder="Respuesta aquí..."></textarea>
+  <!-- Pregunta 6 - Imagen derecha -->
+  <div class="qcard right-img">
+    <div class="qimg">
+      <img src="https://via.placeholder.com/120x100?text=Imagen+6" alt="Imagen 6">
+    </div>
+    <div class="qtext">
+      <label for="q6"><span class="qnum">6</span> ¿Cuáles son las principales diferencias entre un líder y un gestor?</label>
+      <textarea id="q6" name="q6" placeholder="El líder y el gestor cumplen funciones distintas:
+
+El líder crea visión, impulsa el cambio, inspira a las personas y se enfoca en el futuro y la innovación.
+
+El gestor organiza procesos, mantiene el statu quo, coordina tareas, controla resultados y se centra en la eficiencia del presente.
+
+En resumen, el líder transforma y abre caminos, mientras que el gestor mantiene y administra lo existente."></textarea>
+    </div>
   </div>
 
-  <div class="qcard">
-    <label for="q7"><span class="qnum">7</span> Según Warren Bennis, ¿cómo se diferencia el líder del gestor?</label>
-    <textarea id="q7" name="q7" placeholder="Respuesta aquí..."></textarea>
+  <!-- Pregunta 7 - Imagen izquierda -->
+  <div class="qcard left-img">
+    <div class="qimg">
+      <img src="https://via.placeholder.com/120x100?text=Imagen+7" alt="Imagen 7">
+    </div>
+    <div class="qtext">
+      <label for="q7"><span class="qnum">7</span> Según Warren Bennis, ¿cómo se diferencia el líder del gestor?</label>
+      <textarea id="q7" name="q7" placeholder="Según Warren Bennis, la diferencia esencial es que “el líder innova, mientras que el gestor mantiene”. El líder es original, creativo y proyecta una visión transformadora, mientras que el gestor se limita a reproducir lo establecido, enfocándose en la administración y la continuidad."></textarea>
+    </div>
   </div>
 
-  <div class="qcard">
-    <label for="q8"><span class="qnum">8</span> ¿Qué aspectos fundamentales distinguen a un líder de un jefe?</label>
-    <textarea id="q8" name="q8" placeholder="Respuesta aquí..."></textarea>
+  <!-- Pregunta 8 - Imagen derecha -->
+  <div class="qcard right-img">
+    <div class="qimg">
+      <img src="https://via.placeholder.com/120x100?text=Imagen+8" alt="Imagen 8">
+    </div>
+    <div class="qtext">
+      <label for="q8"><span class="qnum">8</span> ¿Qué aspectos fundamentales distinguen a un líder de un jefe?</label>
+      <textarea id="q8" name="q8" placeholder="El líder y el jefe se diferencian en varios aspectos:
+
+El líder inspira compromiso voluntario, motiva con el ejemplo, construye confianza y autonomía, comparte éxitos y desarrolla a las personas.
+
+El jefe ordena y espera obediencia, controla desde la jerarquía, impone autoridad, acapara méritos y utiliza a las personas como recursos.
+
+En esencia, el líder genera seguidores voluntarios, mientras que el jefe solo tiene subordinados."></textarea>
+    </div>
   </div>
 
-  <div class="qcard">
-    <label for="q9"><span class="qnum">9</span> ¿Cuál es la diferencia esencial entre tener subordinados
+  <!-- Pregunta 9 - Imagen izquierda -->
+  <div class="qcard left-img">
+    <div class="qimg">
+      <img src="https://via.placeholder.com/120x100?text=Imagen+9" alt="Imagen 9">
+    </div>
+    <div class="qtext">
+      <label for="q9"><span class="qnum">9</span> ¿Cuál es la diferencia esencial entre tener subordinados y tener seguidores voluntarios?</label>
+      <textarea id="q9" name="q9" placeholder="La diferencia esencial es que los subordinados obedecen por obligación debido a la autoridad formal de un jefe, mientras que los seguidores voluntarios eligen acompañar a un líder porque se sienten inspirados, motivados y reconocidos. Esta elección libre otorga al liderazgo mayor legitimidad e impacto positivo."></textarea>
+    </div>
+  </div>
+
+  <!-- Pregunta 10 - Imagen derecha -->
+  <div class="qcard right-img">
+    <div class="qimg">
+      <img src="https://via.placeholder.com/120x100?text=Imagen+10" alt="Imagen 10">
+    </div>
+    <div class="qtext">
+      <label for="q10"><span class="qnum">10</span> Menciona dos características esenciales de un líder relacionadas con el uso responsable del poder.</label>
+      <textarea id="q10" name="q10" placeholder="Dos características fundamentales son:
+
+Poder responsable: el líder utiliza su influencia para potenciar a los demás, evitando el autoritarismo y compartiendo el poder para fortalecer al equipo.
+
+
